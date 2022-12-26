@@ -8,8 +8,17 @@ void main(List<String> arguments) {
   bool compare = (idade == altura);
   print(compare);
 
-  String nome = "Bruna";
+  const String nome = "Bruna";
   String sobrenome = "Guimarães";
   print('Eu sou: \n'
       '$nome $sobrenome');
+
+  List<String> listaNomes = ['Bruna', 'Vinicius', 'André', 'Guilherme', 'Luiz'];
+  print(listaNomes);
+  print(listaNomes[0]);
+  print(listaNomes.length);
+
+  List<dynamic> bruna = [idade, altura, 'Bruna Guimarães'];
+  String frase = 'Eu sou ${bruna[2]} e tenho ${bruna[0]} anos';
+  print(frase);
 }
